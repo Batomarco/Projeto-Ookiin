@@ -1,0 +1,112 @@
+// trava scroll quando qualquer modal estiver aberto
+.modal-open
+  overflow: hidden
+
+.info-modal-overlay
+  position: fixed
+  inset: 0
+  z-index: 6000
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 18px
+  background: rgba(0,0,0,.65)
+  backdrop-filter: blur(3px)
+
+.info-modal
+  position: relative
+  width: min(820px, 96vw)
+  max-height: 86vh
+  overflow: hidden
+  border-radius: 16px
+  background: #101010
+  color: #fff
+  border: 1px solid rgba(255,255,255,.08)
+  box-shadow: 0 18px 50px rgba(0,0,0,.55)
+
+.info-close
+  all: unset
+  position: absolute
+  top: 12px
+  right: 12px
+  width: 36px
+  height: 36px
+  display: grid
+  place-items: center
+  border-radius: 10px
+  cursor: pointer
+  background: rgba(255,255,255,.06)
+
+  &:hover
+    background: rgba(255,255,255,.10)
+
+.info-header
+  display: flex
+  align-items: center
+  gap: 12px
+  padding: 18px 18px 10px 18px
+  border-bottom: 1px solid rgba(255,255,255,.08)
+
+  h1
+    font-size: 20px
+    margin: 0
+
+.info-subtitle
+  margin: 4px 0 0 0
+  font-size: 13px
+  opacity: .75
+
+.info-badge
+  width: 42px
+  height: 42px
+  border-radius: 12px
+  display: grid
+  place-items: center
+  background: rgba(135,206,250,.15)
+  border: 1px solid rgba(135,206,250,.25)
+
+  i
+    font-size: 18px
+
+.info-content
+  padding: 16px 18px
+  overflow: auto
+  max-height: calc(86vh - 180px)
+
+  // texto dentro do modal
+  p
+    margin: 0 0 12px 0
+    line-height: 1.5
+    opacity: .95
+
+  h2
+    margin: 14px 0 8px 0
+    font-size: 15px
+
+  ul
+    margin: 0 0 12px 18px
+
+  li
+    margin-bottom: 6px
+    line-height: 1.45
+
+  a
+    color: inherit
+    text-decoration: underline
+
+.info-footer
+  padding: 12px 18px 18px 18px
+  border-top: 1px solid rgba(255,255,255,.08)
+  display: flex
+  justify-content: flex-end
+
+.info-btn
+  all: unset
+  cursor: pointer
+  padding: 10px 14px
+  border-radius: 12px
+  background: rgba(135,206,250,.15)
+  border: 1px solid rgba(135,206,250,.25)
+
+  &:hover
+    background: rgba(135,206,250,.22)

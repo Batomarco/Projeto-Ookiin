@@ -1,0 +1,98 @@
+.container 
+    text-align: center
+    padding: 20px
+    max-width: 1200px
+    margin: 0 auto
+    
+.form-container 
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    button:hover
+        opacity: 0.8
+        transform: scale(1.1)
+    
+#btnInserirUrl,
+#btnPesquisarImagem
+    border: 0
+    color: black
+    background: #f1f1f1
+    font-weight: bold
+    padding: 15px 20px
+    font-size: 16px
+    cursor: pointer
+    transition: 0.3s
+    margin: 10px
+
+    &:hover
+        opacity: 0.8
+        transform: scale(1.1)
+
+.form-wrapper,
+#search-box 
+    margin: 0 0 15px
+    display: flex
+    align-items: center
+    margin-top: 10px
+
+.form-wrapper input
+    padding: 10px
+    margin-right: 10px
+    border: 1px soid #ccc
+    font-size: 16px
+
+#escolha
+    color: white
+
+#select-container 
+    display: inline-block
+    padding: 9px
+    width: 100%
+    border: 1px solid #ccc
+    border-radius: 5px
+    font-size: 16px
+    background-color: #f1f1f1
+
+#formato
+    background: transparent
+    border: none
+    width: 100%
+    font-size: 16px
+    color: #333
+    cursor: pointer
+
+#btnAdicionarObjeto
+    padding: 10px
+    background-color: #3498db
+    color: #fff
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    font-size: 16px
+    margin-bottom: 10px
+
+    &:disabled
+        opacity: 0.6
+        background-color: #ccc
+        cursor: not-allowed
+        
+#search-box
+    form
+        display: flex
+        flex: 1
+    button
+        padding: 10px 15px
+        background-color: #3498db
+        color: #fff
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        font-size: 16px
+    input
+        flex: 1
+        padding: 10px
+        margin-right: 10px
+        border: 1px solid #ccc
+        border-radius: 5px
+        font-size: 16px
