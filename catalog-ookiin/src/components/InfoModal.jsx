@@ -141,7 +141,7 @@ const InfoModal = ({ isOpen, onClose, children }) => {
             <br />
                 Se encontrar algum problema, ou quiser sugerir melhorias, envie um e-mail para:
             <br />
-                📧 contatoookiin@gmail.com
+                📧 contato.ookiin@gmail.com
             <br />
                 Críticas, elogios e ideias são muito bem-vindos!
             <br />
@@ -149,6 +149,9 @@ const InfoModal = ({ isOpen, onClose, children }) => {
                 💙 Apoie o projeto
             <br />
                 Se você quiser apoiar este projeto financeiramente, existe um link do LivePix disponível.
+            <br />
+                <a  target="_blank" href="https://livepix.gg/ookiinz">https://livepix.gg/ookiinz</a>
+            <br />            
                 Qualquer valor já ajuda demais 🙏
             <br />
                 Muito obrigado pela sua visita!
